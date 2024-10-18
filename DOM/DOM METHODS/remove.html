@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- remove(): It is used to remove an element from DOM. -->
+     <script>
+         let div2 = document.createElement("div");
+        document.body.appendChild(div2);
+        let p1 = document.createElement("p");
+        p1.innerHTML = "Para 1";
+        p1.style.color = "blue";
+
+        p1.remove();
+        console.log(div2)
+     </script>
+</body>
+</html>

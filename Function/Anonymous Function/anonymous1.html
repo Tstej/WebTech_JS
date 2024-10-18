@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Anonymous function: A function which does not consist any name is called anonymous function.
+        // Syntax: function (){
+                        //set of instructions
+        //          }
+
+        let fun1 = function (){
+            console.log("No-argument Anonymous function");
+        }
+        fun1();
+
+
+
+        let fun2 = function (a,b){
+            console.log("Parameterized Anonymous function");
+            return a*b;
+        }
+        console.log(fun2(10,20)); // 200
+        console.log(fun2());  // NaN
+         
+    </script>
+</body>
+</html>

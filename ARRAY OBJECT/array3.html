@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // array accept function as a value
+
+        let arr3 = [10, true, null, {}, ()=>{console.log("array function");}]
+        console.log(arr3);
+        /* Array(5)
+            0: 10
+            1: true
+            2: null
+            3: {}
+            4: ()=>{console.log("array function");}
+            length: 5
+            [[Prototype]]: Array(0)
+        */
+
+        console.log(typeof(arr3));  // object
+
+        // call function using object reference
+        arr3[4]();
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="print"></p>
+    <button onclick="getDate()">Date</button>
+    <button onclick="getYear()">Year</button>
+
+    <script>
+        let date1 = document.getElementById("print");
+        function getDate(){
+            date1.innerHTML = new Date();
+            date1.style.color = "blue";
+        }
+
+        function getYear(){
+            let date2 = new Date();
+            date1.innerHTML = date2.getFullYear();
+            date1.style.color = "blue";
+        }
+    </script>
+</body>
+</html>

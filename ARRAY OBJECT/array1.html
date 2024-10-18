@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // array accept object "{}" as a value
+
+        let arr1 = ["apple", null, {}, 10, true];
+        console.log(arr1);
+
+
+        // storing values inside object
+        arr1[2].key1 = "value1";
+        console.log(arr1[2]);
+        console.log(typeof(arr1[2].key1));
+
+
+        // updating values of array
+        arr1[1] = "updated";
+        console.log(arr1);
+        
+    </script>
+</body>
+</html>

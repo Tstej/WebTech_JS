@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // We can use function as an value inside Object.
+
+        let mobile = {
+            company : "Samsung",
+            model : "S23 Ultra",
+            make : "germen",
+            price : 56000,
+            functionality : ()=>{
+                console.log("Calling feature");
+                console.log("Video shooting");  
+                return (name)=>{
+                    console.log(name);
+                    
+                }    
+            }
+        }
+
+        mobile.functionality()("Higher order function")
+    </script>
+</body>
+</html>

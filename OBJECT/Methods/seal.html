@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // seal() method : It is used to seal(lock) an object
+        // It is prevent to remove an existing key and value pair from object.
+        
+
+
+        let human = {
+            name: "ram",
+            age: 34,
+            contact: 7878787878
+        }
+        console.log(human);  // {name: 'ram', age: 34, contact: 7878787878}
+
+        Object.seal(human)  
+
+        // 1. To check whether object is sealed or not
+        console.log(Object.isSealed(human));  // true (Return type is boolean)
+
+        // 2. We cannot delete from sealed object
+        delete human.age;
+        console.log(human);  // {name: 'ram', age: 34, contact: 7878787878}
+
+        // 3. We cannot insert new values into sealed object
+        human.email = "ram@gmail.com";
+        console.log(human);  // {name: 'ram', age: 34, contact: 7878787878}
+
+        // 4. We can modifiy existing properties of sealed object
+        human.name = "ved";
+        console.log(human);  // {name: 'ved', age: 34, contact: 7878787878}
+
+        
+    </script>
+</body>
+</html>

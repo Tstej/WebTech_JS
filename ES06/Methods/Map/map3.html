@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let num = [10, 456, 678, 20, 375, 30, 879];
+        console.log(num);
+        // (7) [10, 456, 678, 20, 375, 30, 879]
+
+        let filterData = num.map((cEle, cInd, cArr)=>{
+            return cEle>30;
+        })
+        console.log(filterData);
+        // (7) [false, true, true, false, true, false, true]
+    </script>
+</body>
+</html>

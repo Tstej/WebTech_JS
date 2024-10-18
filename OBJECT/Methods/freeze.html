@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // freeze() method: It is used to restrict the access of an object.
+
+        let duster = {
+            company: "camline",
+            price : 50,
+            color: "black",
+            weight: " 50gm"
+        }
+
+        Object.freeze(duster);
+
+        //1. We cannot delete anything
+        delete duster.price;
+        console.log(duster);  // {company: 'camline', price: 50, color: 'black', weight: ' 50gm'}
+
+        //2. We cannot insert anything
+        duster.width = "15cm";
+        console.log(duster);  // {company: 'camline', price: 50, color: 'black', weight: ' 50gm'}
+
+        //3. We cannot modify existing properties
+        duster.color = "white";
+        console.log(duster);  // {company: 'camline', price: 50, color: 'black', weight: ' 50gm'}
+
+        // 4. To check whether object is frozen or not
+        console.log(Object.isFrozen(duster));  // true
+    </script>
+</body>
+</html>

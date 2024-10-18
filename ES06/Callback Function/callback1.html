@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- setTimeOut() method accepts callback function and time in ms to call function -->
+</head>
+<body>
+    <script>
+        function person1(name, callback) {
+            console.log(`${name} is talking to sanorita.`);
+            setTimeout(callback, 3000)
+            console.log("Call Ended");
+        }
+
+        function person2(){
+            console.log("Person2 has called!!!!");   
+        }
+
+        person1("Raj",person2)
+    </script>
+</body>
+</html>

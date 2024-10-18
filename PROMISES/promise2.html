@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let promise = new Promise((res, rej) => {
+            setTimeout(() => {
+                let emp = {
+                    ename: "Ganya",
+                    isJoined: true
+                }
+
+                if (emp.isJoined) {
+                    res(emp)
+                }
+                else {
+                    rej()
+                }
+            }, 2000)
+        })
+
+        promise.then((employee) => {
+            console.log(employee);
+            employee.location = "Pune";
+            console.log(employee);
+        })
+        .catch(() => {
+            alert("Unfortunately you are rejected!!!")
+        })
+    </script>
+</body>
+
+</html>

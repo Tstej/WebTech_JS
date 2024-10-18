@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // push method : It is used to add elements from the last index.
+        // Note : We can push more than one element simultaneously.
+        // Syntax : push(ele1, ele2, ele3, elen);
+
+        let arr1 = ["index-0", "index-1", "index-2", "index-3", "index-4"];
+        console.log(arr1);
+        
+        arr1[5]="index-5";
+        console.log(arr1);
+        
+        arr1.push("index-6", "index-7", "index-8");
+        console.log(arr1);
+
+        let arr2 = ["newIndex-0", "newIndex-1"];
+        arr2.push(...arr1);               // Using Spread operator we can add one array elements into the other.
+        console.log(arr2);
+
+//------------------------------------------------------------------------------------------------------------------------------
+
+        let num = [1,2,3,4];
+        let arr3 = [10,20,30];
+        let arr4 = [50,60,70];
+
+        num.push(...arr3, ...arr4, 5, 6);
+        console.log(num);   // (12) [1, 2, 3, 4, 10, 20, 30, 50, 60, 70, 5, 6]
+        
+        
+    </script>
+    
+</body>
+</html>

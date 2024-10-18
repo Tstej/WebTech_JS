@@ -1,0 +1,62 @@
+# Browser and compatible JS Engine
+---------------------------------------------------------------------
+        1. chrome - v8
+        2. mozila - 
+
+# Case Conventions
+---------------------------------------------------------------------
+            1. Pascal Case : Amar
+                            AmarAkbarAnthony
+            2. Camel Case :  amar
+                            amarAkbarAnthony
+            3. kabab Case : kabab1
+                            kabab1-kabab2-kabab3
+            4. Snake Case : lower_snake_case
+                            UPPER_SNAKE_CASE
+
+# ES06
+---------------------------------------------------------------------
+        1. let variable
+        2. Higher order function
+        3. Callback Function
+
+
+# Interview Questions
+---------------------------------------------------------------------
+1. Difference between var, let, const.
+
+2. =,==,=== explain.
+    "=" : Assignment Operation (To assign rhs value to lhs)
+    "==" : Equal to Operator (Check only value)
+    "===" : Strict Equal to Operator (Checks value as well as datatypes)
+
+3. this keyword:
+    Value of this keyword with No fat arrow function is "Undefined".
+    Value of this keyword with fat arrow function is "Defined".
+
+4. Callback Function *
+
+5. Higher Order Function *
+
+6. Difference 
+    Block Scope : We cannot access the block member outside the block.
+                 ()=>{
+                    let a = 10;
+                 }
+    
+    Lexical Scope : We can access block Scope member which is declared outside th block inside any block.
+    
+7. Why array index starts from '0'?
+   FORMULA: 
+      A[current size] = address + (index) * (current size)
+
+   Eg. A[1] = 200 + 0 * 1
+            = 200
+
+   When we start the index with any number other than 0, which makes above formula more complex.
+   We need to perform 2-3 operations which is time consuming. 
+
+
+8. *Difference between ES06 methods:  map(), filter(), reduce().  
+
+9. *Difference between Array methods:  push(), pop(), unshift(), shift(), slice(), splice().  

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+<!-- http://vpaste.net/7LMlN -->
+
+    <script>
+        let promise = new Promise((res1, rej2) => {
+            setTimeout(() => {
+                let phone = {
+                    company: "Apple",
+                    model: "16pro Max",
+                    price: 170000,
+                    ram: "258GB",
+                    color: "Pink",
+                    isAvailable: true
+                }
+
+                if (phone.isAvailable) {
+                    res1(phone)
+                }
+                else {
+                    rej1()
+                }
+            }, 2000)
+        })
+
+        promise.then((p1) => {
+            console.log(p1);
+        
+            p1.isPurchased = true;
+            new Promise((res2, rej2) => {
+                setTimeout(() => {
+                    if (p1.isPurchased) {
+                        res2(p1)
+                    }
+                    else {
+                        res2()
+                    }
+                }, 3000)
+            })
+                .then((p2) => {
+                    console.log(p2);
+                   
+
+                    p2.isShipped = true;
+                    new Promise((res3, rej3) => {
+                        setTimeout(() => {
+                            if (p2.isShipped) {
+                                res3(p2)
+                            }
+                            else {
+                                res3()
+                            }
+                        }, 3000)
+                    })
+                        .then((p3) => {
+                            console.log(p3);
+                           
+
+                            p3.isDelivered = true;
+                            new Promise((res4, rej4) => {
+                                setTimeout(() => {
+                                    if (p3.isDelivered) {
+                                        res4(p3)
+                                    }
+                                    else {
+                                        res4()
+                                    }
+                                }, 3000)
+                            })
+                            .then((p4)=>{
+                                console.log(p4);
+                               
+                            })
+                        })
+                })
+        })
+    </script>
+</body>
+
+</html>

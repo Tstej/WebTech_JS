@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" id="form">
+        <input type="text" id="user">
+        <input type="password" id="pass">
+        <input type="submit">
+    </form>
+
+    <script>
+        let form = document.getElementById("form");
+        form.addEventListener("submit", (event)=>{
+            event.preventDefault(); 
+            //preventDefault(): mandatory to see the input given by the user if not then it will show default behaviour of form.
+
+            let userName = document.getElementById("user").value;
+            let passWord = document.getElementById("pass").value;
+            let object = {
+                username : userName,
+                password : passWord
+            }
+
+            console.log(object);
+
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Implicit Typecasting
+
+        console.log(typeof(10 + "10")); // string
+        console.log(typeof("10"+ 10)); // string
+        console.log(typeof("10"+"10")); // string
+
+        console.log(typeof(10+10)); // number
+
+        console.log(typeof(10 + true)); // (11) number     
+        
+        console.log(typeof("a"- 10)); // NaN   (Not compatible type to perform arithmetic operation)
+
+        console.log(typeof(true + "true")); // (truetrue) string
+        
+        console.log(typeof(-33-true)); // (-34) number
+
+        console.log(typeof(!null - false)); // (1) number
+        console.log(typeof(!null + "null")); // (truenull)
+        console.log(typeof("false" - null));
+        console.log(typeof("!null" - null));
+    </script>
+</body>
+</html>

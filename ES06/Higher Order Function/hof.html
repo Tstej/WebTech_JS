@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Order Function</title>
+</head>
+<body>
+    <script>
+        // HOF : A function which can accepts the function as an argument or returns the function is known as HOF.
+        // It is introdused in ES06(2015).
+
+        debugger     // Indicates starting point of debugging
+        function parent() {
+            console.log("Parent function");
+            return ()=>{
+                console.log("Child function");    
+            }
+        }
+
+        parent()()  // function calls for both functions
+    </script>
+</body>
+</html>

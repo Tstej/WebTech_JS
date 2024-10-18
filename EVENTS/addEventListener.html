@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">Click Me</button>
+
+    <script>
+        // let button = document.getElementById("btn");
+        // button.addEventListener("click", ()=>{
+        //     let head = document.createElement("h1");
+        //     document.body.appendChild(head);
+
+        //     let text = document.createTextNode("Hello World");
+        //     head.appendChild(text);
+
+        let button = document.getElementById("btn");
+        button.addEventListener("click", () => {
+            let image = document.createElement("img");
+            document.body.appendChild(image);
+
+            image.setAttribute("src","EVENTS\car-2255161_640.jpg" );
+
+            image.addEventListener("click", ()=>{
+                image.remove();
+            })
+
+        })
+    </script>
+</body>
+
+</html>

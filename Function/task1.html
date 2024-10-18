@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // FILO/LIFO behaviour
+        
+        function fun1(){
+            console.log("fun1 Started");
+            fun2()
+            console.log("fun1 ended");
+        }
+        function fun2(){
+            console.log("fun2 Started");
+            fun3()
+            console.log("fun2 ended");
+        }
+        function fun3(){
+            console.log("fun3 Started");
+            fun4()
+            console.log("fun3 ended");
+        }
+        function fun4(){
+            console.log("fun4 Started");
+            fun5()
+            console.log("fun4 ended");
+        }
+        function fun5(){
+            console.log("fun5 Started");
+            console.log("fun5 ended");
+        }
+
+        fun1()     
+        
+    </script>
+</body>
+</html>

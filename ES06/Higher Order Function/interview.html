@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function interview(name){
+            if(name=="Ram"){
+                return (question)=>{
+                    console.log(`Hello ${name}. ${question}`);
+                }  
+                
+            }
+            else if (name == "Sham"){
+                return (question)=>{
+                    console.log(`Hello ${name}.  ${question}`);
+                }  
+                
+            }
+            else if (name == "Ajay"){
+                return (question)=>{
+                    console.log(`Hello ${name}.  ${question}`);
+                }  
+                
+            }
+            else if (name == "Vijay"){
+                return (question)=>{
+                    console.log(`Hello ${name}.  ${question}`);
+                }  
+                
+            }
+            else{
+                alert("Welcome to Interview!!")
+            }
+        }
+
+        interview("Ram")("What is java?")
+        interview("Sham")("What is HTML?")
+        interview("Ajay")("What is frontend")
+        interview("Vijay")("What is backend")
+    </script>
+</body>
+</html>

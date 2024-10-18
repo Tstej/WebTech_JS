@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Rest Parameter: It should be used only inside function parameter.
+                         It must be last parameter. 
+                         It will accept multiple values and merge them into single entity that is an array.                 
+    -->
+</head>
+<body>
+    <script>
+        function cricket(p1, p2, p3, ...team){
+            console.log(team);
+            // (4) ['dhoni', 'jadeja', 'raina', 'gambhir']
+        }
+
+        cricket("rohit", "virat", "yuvi", "dhoni", "jadeja", "raina", "gambhir");
+    </script>
+</body>
+</html>

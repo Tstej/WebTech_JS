@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Explicit Typecasting
+        console.log(Number("10") + 10); // 20
+        
+        console.log(Boolean(true) + String(2)); // true2
+
+        // When String is converted into boolean it becomes true(1)
+        console.log(Boolean("false") + 1); // 2
+        // When Empty String is converted into boolean it becomes false(0)
+        console.log(Boolean("") + 1); // 1
+        // When String having space is converted into boolean it becomes true(1)
+        console.log(Boolean(" ") + 1); // 2
+
+        console.log(String(10) - 9); // 1
+        
+        console.log(Boolean(2) + Boolean(2)); // 1
+        console.log(Boolean("0") - 0); // 1
+        console.log(Boolean(0) - "10"); // -10
+        
+
+        
+    </script>
+</body>
+</html>

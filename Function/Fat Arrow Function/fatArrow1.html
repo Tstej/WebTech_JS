@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Type 1:
+        let arrow1 = ()=>{
+            console.log("Fat arrow function 1");    
+        }
+        arrow1();
+
+        let arrow2 = (a,b)=>{
+            console.log("Fat arrow function 2");   
+            return a*b; 
+        }
+        arrow2(10,20);
+
+
+        // Type 2: Used for only one or single parameter
+        let arrow3 = parameter => console.log(parameter);
+
+        arrow3(10); // 10
+
+
+    </script>
+</body>
+</html>

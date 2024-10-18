@@ -1,0 +1,32 @@
+[
+    {
+        "ename":"ganya",
+        "age":23,
+        "email":"ganu123@gmail.com",
+        "id" : "1"
+    },
+    {
+        "ename":"manya",
+        "age":21,
+        "email":"manu123@gmail.com",
+        "id" : "2"
+    },
+    {
+        "ename":"ram",
+        "age":25,
+        "email":"ram123@gmail.com",
+        "id" : "3"
+    },
+    {
+        "ename":"ved",
+        "age":22,
+        "email":"ved123@gmail.com",
+        "id" : "4"
+    },
+    {
+        "ename":"hari",
+        "age":23,
+        "email":"hari123@gmail.com",
+        "id" : "5"
+    }
+]

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // Array Creation using Literal
+        let num = [10,20,30,40]
+        console.log(typeof(num));
+        console.log(num);
+
+        // Array Creation using new Keyword
+        let arr = new Array();
+        arr[0]=10;
+        arr[1]=true;
+        arr[2]={company:"Samsung", model:"S23", price:80000};
+        console.log(arr);
+
+        // Array Creation using array constructor
+        let arr2 = new Array(10,20,true,()=>{console.log("Array Constructor");})
+
+        console.log(arr2);
+        arr2[3]();
+
+    </script>
+    
+</body>
+</html>

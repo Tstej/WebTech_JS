@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function cricket(p1, p2, p3, ...team){
+            console.log(team);
+            // (5) ['dhoni', 'jadeja', 'raina', 'gambhir', {…}]
+            console.log(team[4].pName);
+            // Milkha Singh
+            
+        }
+
+        cricket("rohit", "virat", "yuvi", "dhoni", "jadeja", "raina", "gambhir", {pName: "Milkha Singh", game: " Running"});
+    </script>
+</body>
+</html>

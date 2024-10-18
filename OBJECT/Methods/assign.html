@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // To wrap multiple objects in one object we use assign() method.
+
+        let car = {
+            company : "Tata",
+            model : "safari",
+            price : "1800000"
+        }
+        console.log(car);  // {company: 'Tata', model: 'safari', price: '1800000'}
+
+        let engine = {
+            axle : "4*4",
+            drive : "frontWheel"
+        }
+        console.log(engine);  // {axle: '4*4', drive: 'frontWheel'}
+
+        console.log(Object.assign(car, engine));  // {company: 'Tata', model: 'safari', price: '1800000', axle: '4*4', drive: 'frontWheel'}
+
+
+        // Deep copies will be created.
+        console.log(car);  // {company: 'Tata', model: 'safari', price: '1800000', axle: '4*4', drive: 'frontWheel'}
+        console.log(engine);  // {axle: '4*4', drive: 'frontWheel'}
+
+    </script>
+</body>
+</html>

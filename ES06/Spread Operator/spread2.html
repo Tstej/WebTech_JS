@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mobile = ["iphone", "samsung", "oneplus"];
+        console.log(mobile); // (3) ['iphone', 'samsung', 'oneplus']
+
+        let laptop = ["hp", "dell", "lenovo"];
+        console.log(laptop);  // ['hp', 'dell', 'lenovo']
+
+        let copyDevice = [...laptop, 10, 20, 30, ...mobile];
+        console.log(copyDevice);  //(9) ['hp', 'dell', 'lenovo', 10, 20, 30, 'iphone', 'samsung', 'oneplus']
+
+        laptop[4] = "macbook";
+        console.log(copyDevice); // (9) ['hp', 'dell', 'lenovo', 10, 20, 30, 'iphone', 'samsung', 'oneplus']
+        // It will not modify the values in copied array.
+        
+        
+        
+        
+    </script>
+</body>
+</html>

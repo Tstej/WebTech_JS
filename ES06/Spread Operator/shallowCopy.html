@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Shallow Copy: Reference will be same for original and copied array. 
+                       It will affect the original array. 
+    -->
+</head>
+<body>
+    <script>
+        let num = [10,20,30,40,50];
+        console.log(num); // (5) [10, 20, 30, 40, 50]
+        let copyArr = num;
+        console.log(copyArr);  //(5) [10, 20, 30, 40, 50]
+        
+        console.log(num===copyArr);  // true
+        
+        
+    </script>
+</body>
+</html>

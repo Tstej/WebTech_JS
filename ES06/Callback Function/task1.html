@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function mul1(num, callback){
+            console.log(num*1);  
+            setTimeout(callback,2000)   
+        }
+        function mul2(){
+            console.log(num*2); 
+            setTimeout(mul3,2000) 
+        }
+        function mul3(){
+            console.log(num*3); 
+            setTimeout(mul4,2000)    
+        }
+        function mul4(){
+            console.log(num*4);  
+            setTimeout(mul5,2000)   
+        }
+        function mul5(){
+            console.log(num*5);  
+            setTimeout(mul6,2000)   
+        }
+        function mul6(){
+            console.log(num*6);
+            setTimeout(mul7,2000)     
+        }
+        function mul7(){
+            console.log(num*7); 
+            setTimeout(mul8,2000)    
+        }
+        function mul8(){
+            console.log(num*8); 
+            setTimeout(mul9,2000)    
+        }
+        function mul9(){
+            console.log(num*9);  
+            setTimeout(mul10,2000)   
+        }
+        function mul10(){
+            return console.log(num*10);  
+        }
+
+        mul1(2, mul2)
+    </script>
+</body>
+</html>

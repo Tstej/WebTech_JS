@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let promise = new Promise((res, rej)=>{
+            setTimeout(()=>{
+                let p1 = {
+                    company : "Apple",
+                    model : "16pro Max",
+                    price : 170000,
+                    ram : "258GB",
+                    color : "Pink",
+                    isAvailable : true
+                }
+
+                if(p1.isAvailable){
+                    res(p1)
+                }
+                else{
+                    rej()
+                }
+            }, 3000)
+        })
+
+        promise.then((phone)=>{
+            console.log(phone);
+        }).catch(()=>{
+            alert("Unfortunatelly phone is not available!")
+        })
+    </script>
+</body>
+</html>

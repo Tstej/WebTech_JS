@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let fname = ["ram", "sham", "ajay", "vijay"];
+        console.log(fname);
+        // (4) ['ram', 'sham', 'ajay', 'vijay']
+
+        let fullName = fname.map((cValue, cIndex)=>{
+            return cValue+" Jadhav";
+        })
+        console.log(fullName);
+        // (4) ['ram Jadhav', 'sham Jadhav', 'ajay Jadhav', 'vijay Jadhav']
+        
+        
+    </script>
+</body>
+</html>

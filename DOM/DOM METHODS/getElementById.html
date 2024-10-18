@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="head" id="head1"></div>
+    <div class="head" id="head1"></div>
+    <div class="head" id="head1"></div>
+    <div class="head" id="head1"></div>
+    <div class="head" id="head1"></div>
+
+    <script>
+
+        // Only One H1 tag is targeted
+        let ele = document.getElementById("head1");
+
+        ele.innerHTML = `Heading`;
+        ele.style.color = "blue";
+
+        let ele2 = document.getElementsByClassName("head")
+        ele2[2].id = "head3" ;
+        console.log(ele2);
+        // HTMLCollection(5) [div#head1.head, div#head1.head, div#head3.head, div#head1.head, div#head1.head, head1: div#head1.head, head3: div#head3.head]
+        
+    </script>
+</body>
+</html>

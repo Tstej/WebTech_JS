@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+
+        .spin{
+            height: 200px;
+            width: 200px;
+            border: 16px solid black;
+            margin: 30px auto;
+            border-radius: 50%;
+            animation: spinner 1s infinite ease-out;
+        }
+
+        #spin1{
+            border-bottom: 16px solid grey;
+            border-left: 16px solid grey;
+            border-right: 16px solid grey;
+            animation-direction: normal;
+        }
+        
+        @keyframes spinner {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="spin" id="spin1"></div>
+</body>
+</html>

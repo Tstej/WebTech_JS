@@ -1,0 +1,93 @@
+{
+  "contacts": [
+    {
+      "id": "@A121",
+      "name": "jayesh",
+      "photo": "https://th.bing.com/th?id=OIP.x7X2oAehk5M9IvGwO_K0PgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.4&pid=3.1&rm=2",
+      "mobile": "989898989",
+      "email": "ajay123@gmail.com",
+      "company": "tcs",
+      "title": "Software Developer",
+      "groupId": "friend"
+    },
+    {
+      "id": "@A124",
+      "name": "digvijay",
+      "photo": "https://th.bing.com/th/id/OIP.eU8MYLNMRBadK-YgTT6FJQHaHw?w=208&h=217&c=7&r=0&o=5&dpr=1.4&pid=1.7",
+      "mobile": "985558989",
+      "email": "digjay123@gmail.com",
+      "company": "accenture",
+      "title": "Software Developer",
+      "groupId": "4"
+    },
+    {
+      "id": "@A125",
+      "name": "jay",
+      "photo": "https://th.bing.com/th/id/OIP.eU8MYLNMRBadK-YgTT6FJQHaHw?w=208&h=217&c=7&r=0&o=5&dpr=1.4&pid=1.7",
+      "mobile": "989999989",
+      "email": "jay123@gmail.com",
+      "company": "tmech",
+      "title": "Software Developer",
+      "groupId": "5"
+    },
+    {
+      "id": "0e29",
+      "name": "abhijit",
+      "photo": "https://th.bing.com/th?id=OIP.x7X2oAehk5M9IvGwO_K0PgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.4&pid=3.1&rm=2",
+      "mobile": "8787878787",
+      "email": "abhi123@gmail.com",
+      "title": "SD",
+      "company": "Tcs",
+      "groupId": "Friend"
+    },
+    {
+      "id": "ee8e",
+      "name": "Shubham",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj9_Mx7jpTBhUaQhaQA4Pbsuye5lcm1wy0DA&s",
+      "mobile": "9876543210",
+      "email": "shubham@gmail.com",
+      "title": "ST",
+      "company": "TYSS",
+      "groupId": "Friend"
+    },
+    {
+      "id": "8a89",
+      "name": "rajesh",
+      "photo": "hhhhh",
+      "mobile": "8787899998",
+      "email": "rajesh@123.com",
+      "company": "tcs",
+      "title": "st",
+      "groupId": "colleague"
+    },
+    {
+      "id": "235f"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "Colleague"
+    },
+    {
+      "id": "2",
+      "name": "Family"
+    },
+    {
+      "id": "3",
+      "name": "Social"
+    },
+    {
+      "id": "4",
+      "name": "College"
+    },
+    {
+      "id": "5",
+      "name": "Friends"
+    },
+    {
+      "id": "6",
+      "name": "Community"
+    }
+  ]
+}

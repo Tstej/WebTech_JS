@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // fetch(): It will accept JSON file as parameter followed by promise which will return json object data.
+
+        fetch("./data.json").then((response)=>{
+            return response.json();
+        }).then((data)=>{
+            console.log(data);
+        }).catch(()=>{
+            alert("404 Not Found!")
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Object creation using Functional constructor
+
+        function emp(ename, eid, esal, edept){
+            this.ename = ename;
+            this.eid = eid;
+            this.esal = esal;
+            this.edept = edept
+        }
+
+        let emp1 = new emp("ganesh", 2000, 101, "quality");
+        let emp2 = new emp("ramesh", 2230, 102, "HR");
+        console.log(emp1);
+        console.log(emp2);
+        
+        
+
+    </script>
+</body>
+</html>

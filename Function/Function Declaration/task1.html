@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Argument Function</title>
+    <style>
+        #bulb{
+            height: 150px;
+            width: 150px;
+            border: 1px solid;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="bulb"></div>
+    <button onclick="bulbOn()">ON</button>
+    <button onclick="bulbOff()">OFF</button>
+
+
+    <script>
+        let bulb1 = document.getElementById("bulb");
+
+        function bulbOn(){
+            bulb1.style.backgroundColor = prompt("Enter your bulb color");
+        }
+
+        function bulbOff(){
+            bulb1.style.backgroundColor="grey";
+        }
+    </script>
+</body>
+</html>

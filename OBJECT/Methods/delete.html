@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mobile = {
+            company : "apple",
+            price : 100000,
+            make : "california"
+        }
+        console.log(mobile);  // {company: 'apple', price: 100000, make: 'california'}
+
+        delete mobile.price;
+        console.log(mobile);  // {company: 'apple', make: 'california'}
+
+        mobile.price = 200000;
+        console.log(mobile);  // {company: 'apple', make: 'california', price: 200000}
+        
+        
+        
+    </script>
+</body>
+</html>

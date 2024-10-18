@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let exp1 = function exp(){
+            console.log("Function as an Expression")
+        }
+
+        exp1();  // Output: Function as an Expression
+
+        console.log(exp1);  // Output:  ƒ exp(){
+                            //                console.log("Function as an Expression")
+                            //          }
+
+        console.log(exp1());  // Undefined (value of console.log() method is undefined)
+        
+    </script>
+</body>
+</html>
